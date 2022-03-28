@@ -5,7 +5,7 @@
         <div class="pages">
           <h1>Produtos</h1>
           <div>
-            <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+            <b-form  v-if="show">
               <div class="d-flex" inline>
                 <b-form-group
                   class="col-6"
@@ -16,27 +16,29 @@
                   <b-form-input
                     class="col-12"
                     id="input-1"
-                    v-model="form.nome"
+                    v-model="nome"
                     type="Nome"
                     placeholder="Nome"
                     required
                   ></b-form-input>
                 </b-form-group>
 
-                <b-form-group class="col-2"
+                <b-form-group
+                  class="col-2"
                   id="input-group-2"
                   label="Preço de Compra:"
                   label-for="input-2"
                 >
                   <b-form-input
                     id="input-2"
-                    v-model="form.name"
+                    v-model="preco"
                     placeholder="R$"
                     required
                   ></b-form-input>
                 </b-form-group>
-
-                <b-form-group class="col-1"
+<!-- 
+                <b-form-group
+                  class="col-1"
                   id="input-group-2"
                   label="MVA%:"
                   label-for="input-2"
@@ -49,7 +51,8 @@
                   ></b-form-input>
                 </b-form-group>
 
-                <b-form-group class="col-2"
+                <b-form-group
+                  class="col-2"
                   id="input-group-2"
                   label="Val. Venda:"
                   label-for="input-2"
@@ -63,7 +66,8 @@
                 </b-form-group>
               </div>
               <div inline class="d-flex">
-                <b-form-group class="col-3"
+                <b-form-group
+                  class="col-3"
                   id="input-group-3"
                   label="NCM:"
                   label-for="input-3"
@@ -77,7 +81,8 @@
                   ></b-form-input>
                 </b-form-group>
 
-                <b-form-group  class="col-3"
+                <b-form-group
+                  class="col-3"
                   id="input-group-3"
                   label="Grupo:"
                   label-for="input-3"
@@ -90,8 +95,9 @@
                     required
                   ></b-form-input>
                 </b-form-group>
-                
-                <b-form-group  class="col-2"
+
+                <b-form-group
+                  class="col-2"
                   id="input-group-3"
                   label="Estoque:"
                   label-for="input-3"
@@ -105,7 +111,8 @@
                   ></b-form-input>
                 </b-form-group>
 
-                <b-form-group  class="col-3"
+                <b-form-group
+                  class="col-3"
                   id="input-group-3"
                   label="Cód. de Barras:"
                   label-for="input-3"
@@ -117,13 +124,41 @@
                     placeholder="Cód. de Barras"
                     required
                   ></b-form-input>
-                </b-form-group>
+                </b-form-group> -->
               </div>
-              <b-button type="submit" class="mr-1" variant="primary"
+              <b-button class="mr-1" variant="primary" @click="addProduto"
                 >Salvar</b-button
               >
               <b-button type="reset" variant="danger">Excluir</b-button>
             </b-form>
+          </div>
+          <div class="mt-3">
+            <!-- Listagem -->
+            <b-button variant="outline-primary">
+              Adicionar Novo Registro</b-button
+            >
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Cod. de Barras</th>
+                  <th scope="col">Preço</th>
+                  <th scope="col">Ações</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="item in listagem" :key="item">
+                  <th scope="row">{{item.id}}</th>
+                  <td>{{item.nome}}</td>
+                  <td>{{item.codBarras}}</td>
+                  <td>R$ {{ item.preco}}</td>
+                  <td>
+                    <b-button variant="outline-primary">Editar</b-button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
@@ -140,41 +175,32 @@ export default {
   },
   data() {
     return {
+      listagem: [],
+      nome: '',
+      preco: '',
+
       form: {
-        email: "",
-        name: "",
-        food: null,
-        checked: [],
       },
-      foods: [
-        { text: "Select One", value: null },
-        "Carrots",
-        "Beans",
-        "Tomatoes",
-        "Corn",
-      ],
       show: true,
-      methods: {
-        onSubmit(event) {
-          event.preventDefault();
-          alert(JSON.stringify(this.form));
-        },
-        onReset(event) {
-          event.preventDefault();
-          // Reset our form values
-          this.form.email = "";
-          this.form.name = "";
-          this.form.food = null;
-          this.form.checked = [];
-          // Trick to reset/clear native browser form validation state
-          this.show = false;
-          this.$nextTick(() => {
-            this.show = true;
-          });
-        },
-      },
+     
     };
   },
+  methods: {
+    adicionarListagem() {
+
+    },
+    addProduto(){
+      this.listagem.push({nome:this.nome, preco:this.preco})
+      this.nome = ''
+      this.preco = ''
+    }
+  },
+  created(){
+    var list = [
+      {id: 1, nome: 'Iphone 13 PRO', codBarras: '123546897453', preco: 7350.99}
+    ]
+    this.listagem = list
+  }
 };
 </script>
 
