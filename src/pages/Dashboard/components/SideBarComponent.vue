@@ -31,17 +31,17 @@
           ><li><i class="fa-solid fa-user icon"></i> Clientes</li></router-link
         >
 
-        <router-link :to="{ name: 'vendas' }"
+        <!-- <router-link :to="{ name: 'vendas' }"
           ><li>
             <i class="fa-solid fa-cash-register icon"></i> Vendas
           </li></router-link
-        >
+        > -->
 
-        <router-link :to="{ name: 'relatorios' }">
+        <!-- <router-link :to="{ name: 'relatorios' }">
           <li>
             <i class="fa-solid fa-chart-line icon"></i> Relatórios
           </li></router-link
-        >
+        > -->
       </ul>
     </div>
   </div>

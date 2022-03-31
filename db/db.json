@@ -1,91 +1,102 @@
 {
-
+  "clientes": {
     "clientes": [
-        {
-          "id": 1,
-          "nome": "André Secco",
-          "idade": 22,
-          "email": "andrefigueiro5@gmail.com"
-        },
-        {
-          "id": 2,
-          "nome": "João Cleber",
-          "idade": 32,
-          "email": "joaocleber@gmail.com"
-        },
-        {
-          "id": 3,
-          "nome": "Antônio Fagundes",
-          "idade": 45,
-          "email": "fagundesantonio@hotmail.com"
-        },
-        {
-          "id": 4,
-          "nome": "Carlos Miranda",
-          "idade": 16,
-          "email": "mirandacarlos2022@outlook.com"
-        },
-        {
-          "id": 5,
-          "nome": "Marina Silva",
-          "idade": 19,
-          "email": "marinasilva@outlook.com"
-        }
-      ],
-    "produtos": [
       {
         "id": 1,
-        "nome_produto": "Anador 500MG",
-        "preco": "10,50",
-        "descricao": "Produto utilizado quando tiver dores de cabeça"
+        "nome": "André Secco",
+        "idade": 22,
+        "email": "andrefigueiro5@gmail.com"
       },
       {
         "id": 2,
-        "nome_produto": "Dipirona Sodica 1CX",
-        "preco": "16,36",
-        "descricao": "Utilizado para dores no corpo e febre"
+        "nome": "João Cleber",
+        "idade": 32,
+        "email": "joaocleber@gmail.com"
       },
       {
         "id": 3,
-        "nome_produto": "Tandrilax 10G",
-        "preco": "19,52",
-        "descricao": "Usar este medicamento em casos de feridas profundas"
+        "nome": "Antônio Fagundes",
+        "idade": 45,
+        "email": "fagundesantonio@hotmail.com"
       },
       {
         "id": 4,
-        "nome_produto": "Dorilax 60MG",
-        "preco": "50,99",
-        "descricao": "Este medicamento melhora e auxilia no cálcio dos ossos"
+        "nome": "Carlos Miranda",
+        "idade": 16,
+        "email": "mirandacarlos2022@outlook.com"
       },
       {
         "id": 5,
-        "nome_produto": "Dipirona Comprimido",
-        "preco": "2,99",
-        "descricao": "Tomar este remédio para sentir-se mais tranquilo"
+        "nome": "Marina Silva",
+        "idade": 19,
+        "email": "marinasilva@outlook.com"
       }
-    ],
-    "fornecedores": [
-     {
-        "id": 1,
-        "nome_fornecedor": "Nazaria Produtos"
-     },
-     {
-        "id": 2,
-        "nome_fornecedor": "Santa Cruz "
-     }
-    ],
-    "servicos": [
-        {
-            "id": 1,
-            "descricao": "Vacinação padrão"
-        },
-        {
-            "id": 2,
-            "descricao": "Aplicação de medicação"
-        },
-        {
-            "id": 3,
-            "descricao": "Auxilio e consultoria medicamentosa"
-        }
     ]
-  }
+  },
+  "produtos": [
+    {
+      "id": 1,
+      "nomeProd": "Anador 500",
+      "precoProd": "10,50",
+      "estoqueProd": "3",
+      "codBarras": "123456789012",
+      "descricao": "Produto utilizado quando tiver dores de cabeça"
+    },
+    {
+      "id": 2,
+      "nomeProd": "Dipirona Sodica 1CX",
+      "precoProd": "16,36",
+      "estoqueProd": "8",
+      "codBarras": "555444332221",
+      "descricao": "Utilizado para dores no corpo e febre"
+    },
+    {
+      "id": 3,
+      "nomeProd": "Tandrilax 10G",
+      "precoProd": "19,52",
+      "estoqueProd": "5",
+      "codBarras": "568754456745",
+      "descricao": "Usar este medicamento em casos de feridas profundas"
+    },
+    {
+      "id": 4,
+      "nomeProd": "Dorilax 60MG",
+      "precoProd": "50,99",
+      "estoqueProd": "1",
+      "codBarras": "7896004715984",
+      "descricao": "Este medicamento melhora e auxilia no cálcio dos ossos"
+    },
+    {
+      "id": 5,
+      "nomeProd": "Dipirona Comprimido",
+      "precoProd": "2,99",
+      "estoqueProd": "0",
+      "codBarras": "7896004769196",
+      "descricao": "Tomar este remédio para sentir-se mais tranquilo"
+    }
+  ],
+  "fornecedores": [
+    {
+      "id": 1,
+      "nome_fornecedor": "Nazaria Produtos"
+    },
+    {
+      "id": 2,
+      "nome_fornecedor": "Santa Cruz "
+    }
+  ],
+  "servicos": [
+    {
+      "id": 1,
+      "descricao": "Vacinação padrão"
+    },
+    {
+      "id": 2,
+      "descricao": "Aplicação de medicação"
+    },
+    {
+      "id": 3,
+      "descricao": "Auxilio e consultoria medicamentosa"
+    }
+  ]
+}

@@ -15,7 +15,7 @@
         <tbody>
           <tr v-for="item in data" :key="item.id">
             <th scope="row">{{ item.id}}</th>
-            <td>{{item.name}}</td>
+            <td>{{item.nomeProd}}</td>
             <td>{{ (descritpion == 'Clientes') ? item.email : item.descricao}}</td>
           </tr>
         </tbody>

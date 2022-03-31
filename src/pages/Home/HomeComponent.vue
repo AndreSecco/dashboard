@@ -10,7 +10,6 @@
             <div class="col">
               <CardComponent
                 :type="'Clientes'"
-                :percentagem="'7%'"
                 :iconeCard="'fa-users'"
                 :qtd="clients.length"
               />
@@ -18,19 +17,18 @@
             <div class="col">
               <CardComponent
                 :type="'Produtos'"
-                :percentagem="'12%'"
                 :iconeCard="'fa-box'"
-                :qtd="products.length"
+                :qtd="produtos.length"
               />
             </div>
-            <div class="col">
+            <!-- <div class="col">
               <CardComponent
                 :type="'Serviços'"
                 :percentagem="'3%'"
                 :iconeCard="'fa-store'"
                 :qtd="'270'"
               />
-            </div>
+            </div> -->
             <div class="col">
               <CardComponent
                 :type="'Relatórios'"
@@ -52,7 +50,7 @@
                 </div>
                 <div class="col col-md-6">
                   <ListsComponent
-                    :data="products"
+                    :data="produtos"
                     description="Produtos"
                     :columns="['Nome', 'Descrição']"
                   />
@@ -80,23 +78,20 @@ export default {
   data() {
     return {
       clients: [],
-      products: [],
+      produtos: [],
     };
   },
   mounted() {
-    this.getUsers();
+    this.getProdutos()
   },
   methods: {
-    async getUsers() {
-      let response = await axios.get("/");
+   async getProdutos() {
+      const req = await fetch("http://localhost:3000/produtos");
+      const data = await req.json();
 
-      if (response.status == 200) {
-        
-        this.clients = response.data.clients;
-        this.products = response.data.products;
-      } else {
-        console.log("Ocorreu um erro com os Clientes");
-      }
+      this.produtos = data;
+
+      console.log(this.produtos)
     },
 
   },
