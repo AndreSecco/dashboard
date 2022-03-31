@@ -2,7 +2,7 @@
     <div class="my_card">
         <div class="top content">
             <h3>{{type}}</h3>
-            <p class="percentagem"><i class="fa fa-arrow-up"></i> {{ percentagem}}</p>
+            <p class="percentagem"> {{ percentagem}}</p>
         </div>
         <div class="footer content">
            <i :class="['fa ico iconeCard',  iconeCard,]"></i>

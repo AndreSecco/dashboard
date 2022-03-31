@@ -39,6 +39,11 @@ const routes = [
     path: '/relatorios',
     name: 'relatorios',
     component:() => import('../pages/Relatorios/RelatoriosComponents.vue')
+  },
+  {
+    path: '/editaProduto/:idProd',
+    name: 'editaproduto',
+    component:() => import('../pages/Produtos/editaProduto.vue')
   }
 ]
 
