@@ -6,6 +6,8 @@ set -e
 # build
 npm run build
 
+npm run backend
+
 # navigate into the build output directory
 cd dist
 
