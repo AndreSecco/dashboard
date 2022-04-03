@@ -6,6 +6,7 @@ set -e
 # build
 npm run build
 
+# Iniciar backend
 npm run backend
 
 # navigate into the build output directory
