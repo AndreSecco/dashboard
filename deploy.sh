@@ -7,6 +7,7 @@ set -e
 npm run build
 
 # Iniciar backend
+npm install json-server
 npm run backend
 
 # navigate into the build output directory
