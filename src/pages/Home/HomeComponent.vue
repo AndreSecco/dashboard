@@ -86,7 +86,7 @@ export default {
   },
   methods: {
    async getProdutos() {
-      const req = await fetch("http://localhost:3000/produtos");
+      const req = await fetch("https://github.com/AndreSecco/dashboard/tree/master/db/db.json");
       const data = await req.json();
 
       this.produtos = data;
