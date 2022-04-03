@@ -189,7 +189,7 @@ export default {
 
       const dataJson = JSON.stringify(data);
 
-      const req = await fetch("http://localhost:3000/produtos", {
+      const req = await fetch("https://github.com/AndreSecco/dashboard/tree/master/db/db.json", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: dataJson,
@@ -210,7 +210,7 @@ export default {
 
     // LISTA OS PRODUTOS
     async getProdutos() {
-      const req = await fetch("http://localhost:3000/produtos");
+      const req = await fetch("https://github.com/AndreSecco/dashboard/tree/master/db/db.json");
       const data = await req.json();
 
       this.produtos = data;
@@ -223,7 +223,7 @@ export default {
       if (confirm("Deseja excluir este produto?")) this.deleteProd(id);
     },
     async deleteProd(id) {
-      const req = await fetch(`http://localhost:3000/produtos/${id}`, {
+      const req = await fetch(`https://github.com/AndreSecco/dashboard/tree/master/db/db.json/${id}`, {
         method: "DELETE",
       });
 
@@ -243,7 +243,7 @@ export default {
 
       const option = event.target.value;
 
-      const req1 =await fetch(`http://localhost:3000/produtos/${id}`)
+      const req1 =await fetch(`https://github.com/AndreSecco/dashboard/tree/master/db/db.json/${id}`)
       
       const data = await req1.json();
 
@@ -263,7 +263,7 @@ export default {
         codBarras: this.codBarras,
       });
 
-       const req = await fetch(`http://localhost:3000/produtos/${id}`, {
+       const req = await fetch(`https://github.com/AndreSecco/dashboard/tree/master/db/db.json/${id}`, {
          method: "PATCH",
          headers:{"Content-Type": "application/json"},
          body: dataJson
