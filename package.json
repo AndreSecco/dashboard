@@ -1,11 +1,14 @@
 {
   "name": "frontend",
+  "homepage": "http://andresecco.github.io/dashboard",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "backend": "json-server --watch db/db.json"
+    "backend": "json-server --watch db/db.json",
+    "predeploy": "npm run build",
+    "deploy": "master -d build"
   },
   "dependencies": {
     "axios": "^0.26.1",

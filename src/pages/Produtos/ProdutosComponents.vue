@@ -189,7 +189,7 @@ export default {
 
       const dataJson = JSON.stringify(data);
 
-      const req = await fetch("https://github.com/AndreSecco/dashboard/tree/master/db/db.json", {
+      const req = await fetch("https://my-json-server.typicode.com/andresecco/dashboard/produtos/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: dataJson,
@@ -210,7 +210,7 @@ export default {
 
     // LISTA OS PRODUTOS
     async getProdutos() {
-      const req = await fetch("https://github.com/AndreSecco/dashboard/tree/master/db/db.json");
+      const req = await fetch("https://my-json-server.typicode.com/andresecco/dashboard/produtos/");
       const data = await req.json();
 
       this.produtos = data;
@@ -223,7 +223,7 @@ export default {
       if (confirm("Deseja excluir este produto?")) this.deleteProd(id);
     },
     async deleteProd(id) {
-      const req = await fetch(`https://github.com/AndreSecco/dashboard/tree/master/db/db.json/${id}`, {
+      const req = await fetch(`https://my-json-server.typicode.com/andresecco/dashboard/produtos/${id}`, {
         method: "DELETE",
       });
 
@@ -243,7 +243,7 @@ export default {
 
       const option = event.target.value;
 
-      const req1 =await fetch(`https://github.com/AndreSecco/dashboard/tree/master/db/db.json/${id}`)
+      const req1 =await fetch(`https://my-json-server.typicode.com/andresecco/dashboard/produtos/${id}`)
       
       const data = await req1.json();
 
@@ -263,7 +263,7 @@ export default {
         codBarras: this.codBarras,
       });
 
-       const req = await fetch(`https://github.com/AndreSecco/dashboard/tree/master/db/db.json/${id}`, {
+       const req = await fetch(`https://my-json-server.typicode.com/andresecco/dashboard/produtos/${id}`, {
          method: "PATCH",
          headers:{"Content-Type": "application/json"},
          body: dataJson

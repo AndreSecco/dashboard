@@ -86,7 +86,7 @@ export default {
   },
   methods: {
    async getProdutos() {
-      const req = await fetch("https://github.com/AndreSecco/dashboard/tree/master/db/db.json");
+      const req = await fetch("https://my-json-server.typicode.com/andresecco/dashboard/produtos/");
       const data = await req.json();
 
       this.produtos = data;
