@@ -1,38 +1,36 @@
 {
-  "clientes": {
-    "clientes": [
-      {
-        "id": 1,
-        "nome": "André Secco",
-        "idade": 22,
-        "email": "andrefigueiro5@gmail.com"
-      },
-      {
-        "id": 2,
-        "nome": "João Cleber",
-        "idade": 32,
-        "email": "joaocleber@gmail.com"
-      },
-      {
-        "id": 3,
-        "nome": "Antônio Fagundes",
-        "idade": 45,
-        "email": "fagundesantonio@hotmail.com"
-      },
-      {
-        "id": 4,
-        "nome": "Carlos Miranda",
-        "idade": 16,
-        "email": "mirandacarlos2022@outlook.com"
-      },
-      {
-        "id": 5,
-        "nome": "Marina Silva",
-        "idade": 19,
-        "email": "marinasilva@outlook.com"
-      }
-    ]
-  },
+  "clientes": [
+    {
+      "id": 1,
+      "nomeCliente": "André Secco",
+      "idadeCliente": 22,
+      "emailCliente": "andrefigueiro5@gmail.com"
+    },
+    {
+      "id": 2,
+      "nomeCliente": "João Cleber",
+      "idadeCliente": 32,
+      "emailCliente": "joaocleber@gmail.com"
+    },
+    {
+      "id": 3,
+      "nomeCliente": "Antônio Fagundes",
+      "idadeCliente": 45,
+      "emailCliente": "fagundesantonio@hotmail.com"
+    },
+    {
+      "id": 4,
+      "nomeCliente": "Carlos Miranda",
+      "idadeCliente": 16,
+      "emailCliente": "mirandacarlos2022@outlook.com"
+    },
+    {
+      "id": 5,
+      "nomeCliente": "Marina Silva",
+      "idadeCliente": 19,
+      "emailCliente": "marinasilva@outlook.com"
+    }
+  ],
   "produtos": [
     {
       "id": 1,
