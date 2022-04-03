@@ -1,0 +1,100 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nomeCliente": "André Secco",
+      "idadeCliente": 22,
+      "emailCliente": "andrefigueiro5@gmail.com"
+    },
+    {
+      "id": 2,
+      "nomeCliente": "João Cleber",
+      "idadeCliente": 32,
+      "emailCliente": "joaocleber@gmail.com"
+    },
+    {
+      "id": 3,
+      "nomeCliente": "Antônio Fagundes",
+      "idadeCliente": 45,
+      "emailCliente": "fagundesantonio@hotmail.com"
+    },
+    {
+      "id": 4,
+      "nomeCliente": "Carlos Miranda",
+      "idadeCliente": 16,
+      "emailCliente": "mirandacarlos2022@outlook.com"
+    },
+    {
+      "id": 5,
+      "nomeCliente": "Marina Silva",
+      "idadeCliente": 19,
+      "emailCliente": "marinasilva@outlook.com"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nomeProd": "Anador 500",
+      "precoProd": "10,50",
+      "estoqueProd": "3",
+      "codBarras": "123456789012",
+      "descricao": "Produto utilizado quando tiver dores de cabeça"
+    },
+    {
+      "id": 2,
+      "nomeProd": "Dipirona Sodica 1CX",
+      "precoProd": "16,36",
+      "estoqueProd": "8",
+      "codBarras": "555444332221",
+      "descricao": "Utilizado para dores no corpo e febre"
+    },
+    {
+      "id": 3,
+      "nomeProd": "Tandrilax 10G",
+      "precoProd": "19,52",
+      "estoqueProd": "5",
+      "codBarras": "568754456745",
+      "descricao": "Usar este medicamento em casos de feridas profundas"
+    },
+    {
+      "id": 4,
+      "nomeProd": "Dorilax 60MG",
+      "precoProd": "50,99",
+      "estoqueProd": "1",
+      "codBarras": "7896004715984",
+      "descricao": "Este medicamento melhora e auxilia no cálcio dos ossos"
+    },
+    {
+      "id": 5,
+      "nomeProd": "Dipirona Comprimido",
+      "precoProd": "2,99",
+      "estoqueProd": "0",
+      "codBarras": "7896004769196",
+      "descricao": "Tomar este remédio para sentir-se mais tranquilo"
+    }
+  ],
+  "fornecedores": [
+    {
+      "id": 1,
+      "nome_fornecedor": "Nazaria Produtos"
+    },
+    {
+      "id": 2,
+      "nome_fornecedor": "Santa Cruz "
+    }
+  ],
+  "servicos": [
+    {
+      "id": 1,
+      "descricao": "Vacinação padrão"
+    },
+    {
+      "id": 2,
+      "descricao": "Aplicação de medicação"
+    },
+    {
+      "id": 3,
+      "descricao": "Auxilio e consultoria medicamentosa"
+    }
+  ]
+}
